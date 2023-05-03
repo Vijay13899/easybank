@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Public Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body p {
+  font-size: 18px;
+  color: hsl(233, 8%, 62%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+}
+
+button {
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(136, 65%, 70%), hsl(192, 70%, 70%));
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+ul {
+  list-style: none;
+}
+
+.top {
+  display: flex;
+  padding-bottom: -5rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.top-left {
+  padding: 5rem 6.5rem;
+}
+.mid {
+  background-color: hsl(220, 16%, 96%);
+  transform: translateY(-100px);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 7rem;
+}
+.reasons {
+  display: flex;
+  gap: 2rem;
+}
+.mid2 {
+  padding-inline: 3rem;
+  padding-bottom: 3rem;
+  margin-top: -50px;
+}
+.mid2 > .heading {
+  padding-left: 3rem;
+}
+.articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+}
+.article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.content {
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  color: hsl(233, 26%, 24%);
+}
+ul a {
+  color: hsl(233, 8%, 62%);
+}
+a:hover {
+  color: hsl(136, 65%, 51%);
+  transition: color 0.5s ease;
+}
+footer {
+  display: flex;
+  background-color: hsl(233, 26%, 30%);
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 3rem;
+}
+footer ul li {
+  padding: 1rem 1rem 1rem 0;
+}
+footer ul li a {
+  color: white;
+}
+.media img {
+  padding: 0.5rem;
+}
+.logo {
+  padding: 1rem;
+}
+.heading {
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+}
+
+.lg {
+  font-size: 4rem;
+}
+.md {
+  font-size: 3rem;
+}
+.sm {
+  font-size: 1.5rem;
+}
+.top-right {
+  position: relative;
+  overflow: hidden;
+}
+.desktop {
+  transform: translate(-4rem, -5rem);
+}
+.mockups {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  left: 3rem;
+}
+@media screen and (max-width: 768px) {
+  /* mobile */
+  nav ul {
+    display: none;
+  }
+  dialog {
+    position: absolute;
+    top: -20rem;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  dialog ul {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    max-width: 100%;
+    height: auto;
+  }
+  dialog ul li {
+    border-bottom: 1px solid #ccc;
+    margin-right: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  dialog::backdrop {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+  }
+  nav button {
+    display: none;
+  }
+  .lg {
+    font-size: 2.5rem;
+  }
+  .md {
+    font-size: 1.75rem;
+  }
+  .sm {
+    font-size: 1.25rem;
+  }
+  body {
+    text-align: center;
+  }
+  .top {
+    flex-direction: column-reverse;
+  }
+  .desktop {
+    width: 100%;
+  }
+  .mid {
+    transform: translate(0);
+  }
+  .reasons {
+    flex-direction: column;
+  }
+  .mid2 {
+    padding-top: 2rem;
+  }
+  .articles {
+    flex-direction: column;
+  }
+  .mid2 > .heading {
+    padding-left: 0;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .nav-button {
+    display: block;
+    cursor: pointer;
+  }
+  /* .nav-button.not-active {
+    display: none;
+  }
+  .close {
+    display: none;
+  }
+  .close.active {
+    cursor: pointer;
+    display: block;
+  }
+  nav ul li {
+    text-align: center;
+    padding-block: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+  nav ul.active {
+    display: flex;
+  } */
+  .close {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav ul {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  /* desktop */
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
+  .mockups {
+    width: 100%;
+  }
+  .desktop {
+    display: none;
+  }
+}
