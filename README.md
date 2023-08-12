@@ -12,8 +12,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -25,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live URL: (https://vijay13899.github.io/easybank/)
 
 ## My process
 
