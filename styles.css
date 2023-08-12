@@ -7,12 +7,14 @@
 body {
   margin: 0;
 }
-
+main {
+  min-height: 100vh;
+  max-height: 100%;
+}
 body p {
   font-size: 18px;
   color: hsl(233, 8%, 62%);
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -153,6 +155,70 @@ footer ul li a {
   right: 0;
   left: 3rem;
 }
+.mini {
+  background-color: hsl(220, 16%, 96%);
+  padding: 3rem 0;
+  text-align: center;
+}
+.mini form {
+  width: 75%;
+  margin: auto;
+}
+.mini p,
+.about p {
+  color: hsl(233, 26%, 24%);
+}
+.pad {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.center {
+  text-align: center;
+}
+.res {
+  width: 100%;
+  height: auto;
+}
+.part {
+  display: flex;
+  justify-content: space-evenly;
+}
+.inner {
+  width: 50%;
+  background-color: hsl(220, 16%, 96%);
+}
+.rev {
+  flex-direction: row-reverse;
+}
+.construction h1 {
+  text-align: center;
+  max-width: 100%;
+}
+#mini {
+  width: 50%;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+#mini p {
+  color: darkblue;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+}
+form input {
+  height: 2rem;
+}
 @media screen and (max-width: 768px) {
   /* mobile */
   nav ul {
@@ -210,8 +276,15 @@ footer ul li a {
   .mid2 {
     padding-top: 2rem;
   }
-  .articles {
+  .articles,
+  .part,
+  .rev {
     flex-direction: column;
+  }
+  .inner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
   .mid2 > .heading {
     padding-left: 0;
